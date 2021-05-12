@@ -1,0 +1,128 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 2rem;
+    color: #111827;
+}
+
+body, p, button, a, li {
+    font-family: 'Montserrat', 'sans-serif';
+}
+
+a {
+    text-decoration: none;
+    color: #111827;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.5;
+    text-align: center;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+p {
+    line-height: 1.7;
+}
+
+/* component classes */
+
+.heading-large {
+    font-size: 2.5rem;
+}
+
+.container {
+    padding: 0 16px;
+}
+
+.container-slim {
+    margin: 0 2rem;
+}
+
+.btn {
+    display: inline-block;
+    border: none;
+    border-radius: 50px;
+    padding: 16px 24px;
+    text-transform: uppercase;
+    background-color: #111827;
+    color: #fff;
+    font-weight: 500;
+    box-shadow: 0px 10px 10px -10px #000;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn:hover, .btn:focus {
+    box-shadow: none;
+    transform: scale(0.97);
+}
+
+
+/* util classes */
+
+.mb-md {
+    margin-bottom: 1rem;
+}
+
+.mb-lg {
+    margin-bottom: 2rem;
+}
+
+@media(min-width: 600px) {
+    .heading-large {
+        font-size: 3rem;
+    }
+
+    .container-slim {
+        margin: 0 4rem;
+    }
+}
+
+@media(min-width: 768px) {
+    .heading-large {
+        font-size: 3.4rem;
+    }
+
+    .container-slim {
+        margin: 0 10rem;
+    }
+}
+
+@media(min-width: 1024px) {
+    .heading-large {
+        font-size: 4rem;
+    }
+
+    .container-slim {
+        margin: 0 20rem;
+    }
+
+    .btn {
+        font-size: 1.6rem;
+    }
+}
+
+@media(min-width: 1200px) {
+    .heading-large {
+        font-size: 4.4rem;
+    }
+
+    .container-slim {
+        margin: 0 25vw;
+    }
+}

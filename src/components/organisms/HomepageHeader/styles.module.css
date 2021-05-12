@@ -1,0 +1,46 @@
+.header {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 7rem 0;
+}
+
+.imageWrapper {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 1.8rem;
+}
+
+.image {
+    border-radius: 100%;
+}
+
+.subheading {
+    font-weight: 700;
+    font-size: 2rem;
+    color: #2b3341;
+}
+
+
+@media (min-width: 768px) {
+    .imageWrapper {
+        margin-bottom: 2rem;
+    }
+
+    .subheading {
+        font-size: 2.4rem;
+    }
+
+    .imageWrapper {
+        width: 90px;
+        height: 90px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .subheading {
+        font-size: 2.8rem;
+    }
+}
