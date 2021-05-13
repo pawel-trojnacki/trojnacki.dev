@@ -27,26 +27,49 @@ a {
 
 h1, h2, h3, h4, h5, h6 {
     line-height: 1.5;
-    text-align: center;
     font-weight: 700;
 }
 
+h1, h2 {
+    text-align: center;
+}
+
 h1 {
-    font-size: 2rem;
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.4rem;
+}
+
+h3 {
+    font-size: 1.8rem;
+    font-weight: 600;
 }
 
 p {
-    line-height: 1.7;
+    line-height: 1.5;
+    font-weight: 500;
+    color: #374151;
+    text-align: justify;
+}
+
+ul,
+ul li {
+   margin:0;
+   padding: 0;
+   text-indent: 0;
+   list-style-type: none;
 }
 
 /* component classes */
 
-.heading-large {
+h1 {
     font-size: 2.5rem;
 }
 
 .container {
-    padding: 0 16px;
+    padding: 0 2rem;
 }
 
 .container-slim {
@@ -84,18 +107,34 @@ p {
 }
 
 @media(min-width: 600px) {
-    .heading-large {
+    h1 {
         font-size: 3rem;
+    }
+    
+    h2 {
+        font-size: 2.8rem;
+    }
+
+    h3 {
+        font-size: 2rem;
     }
 
     .container-slim {
         margin: 0 4rem;
     }
+
+    .container {
+        margin: 0 4rem;
+    }
 }
 
 @media(min-width: 768px) {
-    .heading-large {
+    h1 {
         font-size: 3.4rem;
+    }
+
+    h2 {
+        font-size: 3.2rem;
     }
 
     .container-slim {
@@ -104,8 +143,16 @@ p {
 }
 
 @media(min-width: 1024px) {
-    .heading-large {
+    h1 {
         font-size: 4rem;
+    }
+    
+    h2 {
+        font-size: 3.6rem;
+    }
+
+    h3 {
+        font-size: 2rem;
     }
 
     .container-slim {
@@ -118,8 +165,16 @@ p {
 }
 
 @media(min-width: 1200px) {
-    .heading-large {
+    h1 {
         font-size: 4.4rem;
+    }
+    
+    h2 {
+        font-size: 3.8rem;
+    }
+
+    .container {
+        margin: 0 5vw;
     }
 
     .container-slim {
