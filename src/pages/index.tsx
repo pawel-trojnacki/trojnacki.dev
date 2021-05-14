@@ -5,6 +5,8 @@ import { ProjectInfo } from '@/types/project/projectInfo.interface';
 import HomepageHeader from '@/components/organisms/HomepageHeader';
 import Grid from '@/components/organisms/Grid';
 import Section from '@/components/containers/Section';
+import Text from '@/components/common/Text';
+import ContactForm from '@/components/organisms/ContactForm';
 
 interface Props {
   projects: ProjectInfo[];
@@ -14,26 +16,42 @@ export const getStaticProps: GetStaticProps = (context) =>
   getHomePageStaticProps(context);
 
 const Home: React.FC<Props> = ({ projects }) => (
-  <div>
+  <>
     <HomepageHeader />
     <Section id="portfolio" title="Selected Projects">
       <Grid projects={projects} />
     </Section>
-    <p>
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit
-      repellendus molestiae maiores veritatis adipisci atque asperiores
-      assumenda, quo, tempore debitis qui voluptatum eaque accusamus hic
-      delectus odit eligendi. Esse incidunt at totam officia adipisci quis,
-      ipsum pariatur autem fugiat quae consequuntur commodi fugit perspiciatis
-      eveniet earum iste quisquam excepturi corporis porro doloribus. Aliquid
-      culpa cumque quibusdam eveniet voluptatem magni aspernatur tenetur rerum
-      mollitia nisi enim maiores, harum est animi, nobis sed reprehenderit
-      doloremque recusandae dolor provident amet, veniam officiis neque non.
-      Vitae cum quisquam quos placeat, modi maiores odio sequi doloribus fugiat
-      cumque itaque repellat sapiente omnis nam iure eius.
-    </p>
-    {/* <pre>{JSON.stringify(projects, null, 2)}</pre> */}
-  </div>
+    <Section id="about" title="About" slim>
+      <Text large center>
+        I’m focused especially on front-end development, so{` `}
+        <strong>HTML</strong>,{` `}
+        <strong>CSS</strong>, and <strong>SASS</strong> are my bread and butter.
+        I speak fluent <strong>JavaScript</strong> and a bit ineloquent{` `}
+        <strong>TypeScript</strong>
+        {` `}
+        and <strong>PHP</strong>.
+      </Text>
+      <Text large center>
+        <strong>React</strong> is my favorite framework and I’m no stranger to
+        {` `}
+        <strong>Redux</strong>, testing libraries, or static site generators.
+        I’ve been working with <strong>WordPress</strong>
+        {` `}
+        while freelancing and I’m a huge fan of theme development.
+      </Text>
+      <Text large center>
+        A few of my training projects are created using <strong>Node</strong> as
+        a backend, so I have a basic knowledge about <strong>Express</strong>
+        {` `}
+        and
+        {` `}
+        <strong>Nest</strong>.
+      </Text>
+    </Section>
+    <Section id="contact" title="Wanna hire me?" slim>
+      <ContactForm />
+    </Section>
+  </>
 );
 
 export default Home;

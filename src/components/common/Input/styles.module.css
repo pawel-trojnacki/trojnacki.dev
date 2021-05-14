@@ -1,0 +1,65 @@
+.container {
+    margin-bottom: 2.2rem;
+}
+
+.container:focus-within>.label {
+    color: #111827;
+}
+
+.label, .input {
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.label {
+    margin-bottom: 0.8rem;
+    color: #4B5563;
+}
+
+.input {
+    width: 100%;
+    padding: 1rem;
+    border: 2px solid #6B7280;
+    border-radius: 0.8rem;
+}
+
+.input:focus {
+    outline: none;
+    border-color: #111827;
+    box-shadow: 0 0 0px 1px #0005;
+}
+
+@media (min-width: 600px) {
+    .container {
+        margin-bottom: 2.4rem;
+    }
+    .label {
+        margin-bottom: 1rem;
+        color: #4B5563;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        margin-bottom: 2.8rem;
+    }
+    .label {
+        margin-bottom: 1.2rem;
+        color: #4B5563;
+    }
+    .label, .input {
+        font-size: 1.8rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        margin-bottom: 3rem;
+    }
+    .input {
+        padding: 1.2rem 1.6rem
+    }
+    .label, .input {
+        font-size: 2rem;
+    }
+}

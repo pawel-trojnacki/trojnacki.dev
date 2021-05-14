@@ -17,11 +17,11 @@ export const getStaticProps: GetStaticProps = (context) =>
 const Project: React.FC<Props> = ({
   project: { title, projectFields, blocks },
 }) => (
-  <div>
+  <>
     <h1>{title}</h1>
     <pre>{JSON.stringify(projectFields, null, 2)}</pre>
     <pre>{JSON.stringify(blocks, null, 2)}</pre>
-  </div>
+  </>
 );
 
 export default Project;
