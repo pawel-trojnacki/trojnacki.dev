@@ -3,18 +3,25 @@
     margin-bottom: 2rem;
 }
 
+.form {
+    margin-bottom: 2.6rem;
+}
+
 @media (min-width: 600px) {
     .consent {
         font-size: 1.4rem;
         margin-bottom: 3rem;
     }
-    .form {
+    .formWrapper {
         margin: 0 5%;
-    }    
+    }
+    .form {
+        margin-bottom: 4rem;
+    }
 }
 
 @media (min-width: 1600px) {
-    .form {
+    .formWrapper {
         margin: 0 10%;
     }    
 }

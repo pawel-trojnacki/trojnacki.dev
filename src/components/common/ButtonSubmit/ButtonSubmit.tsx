@@ -1,11 +1,11 @@
 import React from 'react';
 
 interface Props {
-  loading: boolean;
+  disabled: boolean;
 }
 
-const ButtonSubmit: React.FC<Props> = ({ children, loading }) => (
-  <button type="submit" className="btn" disabled={loading}>
+const ButtonSubmit: React.FC<Props> = ({ children, disabled }) => (
+  <button type="submit" className="btn" disabled={disabled}>
     {children}
   </button>
 );

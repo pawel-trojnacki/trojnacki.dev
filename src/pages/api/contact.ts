@@ -1,14 +1,13 @@
 import { NextApiRequest, NextApiResponse } from 'next';
 import nodemailer, { Transporter } from 'nodemailer';
+import { ContactResponse } from '@/types/api/contactResponse.interface';
 
-const responseError = {
-  error: true,
-  message: `Something went wrong. Please try again`,
+const responseError: ContactResponse = {
+  success: false,
 };
 
-const responseSuccess = {
-  error: false,
-  message: `Email has been sent. Thanks for your message!`,
+const responseSuccess: ContactResponse = {
+  success: true,
 };
 
 export default (req: NextApiRequest, res: NextApiResponse) => {
@@ -34,9 +33,8 @@ export default (req: NextApiRequest, res: NextApiResponse) => {
 
   transporter.sendMail(mailData, (err) => {
     if (err) {
-      res.status(404).json(responseError);
-    } else {
-      res.status(200).json(responseSuccess);
+      return res.status(404).json(responseError);
     }
+    return res.status(200).json(responseSuccess);
   });
 };

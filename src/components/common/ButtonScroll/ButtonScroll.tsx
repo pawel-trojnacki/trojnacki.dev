@@ -10,7 +10,6 @@ const ButtonScroll: React.FC<Props> = ({ children, destinationId }) => {
     if (destination) {
       destination.scrollIntoView({ behavior: `smooth` });
     }
-    // window.scrollTo(0, window.innerHeight);
   };
   return (
     <button className="btn" type="button" onClick={handleButtonClick}>

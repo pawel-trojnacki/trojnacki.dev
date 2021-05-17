@@ -16,6 +16,10 @@
     color: #4B5563;
 }
 
+.label.labelError, .container:focus-within>.label.labelError {
+    color: #7F1D1D;
+}
+
 .input {
     width: 100%;
     padding: 1rem;
@@ -23,10 +27,26 @@
     border-radius: 0.8rem;
 }
 
+.input.inputError {
+    border-color: #7F1D1D;
+}
+
 .input:focus {
     outline: none;
     border-color: #111827;
     box-shadow: 0 0 0px 1px #0005;
+}
+
+.input.inputError:focus {
+    border-color: #7F1D1D;
+    box-shadow: 0 0 0px 1px #7F1D1Dbb;
+
+}
+
+.error {
+    margin-top: 0.6rem;
+    font-size: 1.4rem;
+    color: #7F1D1D;
 }
 
 @media (min-width: 600px) {
