@@ -5,6 +5,7 @@ export const projectsPartial = `
         id
         title
         projectFields {
+            priority
             shortExcerpt
             thumbImage {
             sourceUrl

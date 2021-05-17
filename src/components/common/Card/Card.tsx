@@ -10,8 +10,8 @@ interface Props {
 }
 
 const Card: React.FC<Props> = ({ project: { title, slug, projectFields } }) => (
-  <li>
-    <Reveal variant="zoomIn">
+  <li className={classes.card}>
+    <Reveal variant="fadeIn">
       <Link href={`/projects/${slug}`}>
         <div className={classes.imageWrapper}>
           <Image
@@ -27,8 +27,6 @@ const Card: React.FC<Props> = ({ project: { title, slug, projectFields } }) => (
           />
         </div>
       </Link>
-    </Reveal>
-    <Reveal variant="fadeIn">
       <Link href={`/projects/${slug}`}>
         <h3 className={classes.title}>{title}</h3>
       </Link>

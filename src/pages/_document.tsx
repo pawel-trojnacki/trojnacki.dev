@@ -18,7 +18,11 @@ class MyDocument extends Document {
         <Head>
           <meta name="theme-color" content="#FFFFFF" />
           <link rel="shortcut icon" href="/favicon.png" />
-          <link rel="stylesheet" href="/fonts/fonts.css" />
+          <link rel="preconnect" href="https://fonts.gstatic.com" />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap"
+            rel="stylesheet"
+          />
         </Head>
         <body>
           <Main />

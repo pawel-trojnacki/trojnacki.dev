@@ -1,4 +1,11 @@
+.card>div {
+    padding: 2rem 2rem 3rem;
+    border-radius: 1.4rem;
+    background-color: #fff;
+}
+
 .imageWrapper {
+    border-radius: 1.4rem;
     overflow: hidden;
 }
 
@@ -12,7 +19,7 @@
 }
 
 .title {
-    margin-top: 1.4rem;
+    margin-top: 4rem;
 }
 
 .paragraph {
@@ -26,11 +33,13 @@
     }
 }
 
-@media (min-width: 1200px) {
-    .title {
-        margin-top: 1.8rem;
+@media (min-width: 1024px) {
+    .card>div {
+        padding: 3rem;
     }
+}
 
+@media (min-width: 1200px) {
     .paragraph {
         font-size: 1.7rem;
     }

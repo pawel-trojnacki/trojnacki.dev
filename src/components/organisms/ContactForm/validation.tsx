@@ -1,6 +1,6 @@
 import React from 'react';
 import Emoji from '@/components/common/Emoji';
-import { FormValues } from './formData';
+import { FormValues } from '@/types/contact/formValues.interface';
 
 export const validation = ({
   email,
