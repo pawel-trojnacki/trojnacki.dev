@@ -30,7 +30,7 @@ const HomepageHeader: React.FC = () => (
       initial="hidden"
       animate="visible"
     >
-      <motion.p className={`${classes.subheading} mb-md`} variants={item}>
+      <motion.p className="subheading mb-md" variants={item}>
         Hi, I&apos;m Paweł{` `}
         <Emoji ariaLabel="greeting">🖐</Emoji>
       </motion.p>
@@ -57,10 +57,10 @@ const HomepageHeader: React.FC = () => (
         alt="Website mockups"
         width={1000}
         height={1200}
-        quality={100}
         objectFit="contain"
         objectPosition="center"
         className={classes.img}
+        loading="eager"
         priority
       />
     </motion.div>

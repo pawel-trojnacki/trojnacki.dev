@@ -20,11 +20,10 @@ html {
 body {
     font-size: 2rem;
     color: #111827;
-    background-color: #f7f6fb;
     overscroll-behavior-y: none;
 }
 
-body, p, button, a, li, input, textarea {
+body, p, button, li, input, textarea {
     font-family: 'Montserrat', 'sans-serif';
     font-weight: 600;
 }
@@ -35,17 +34,25 @@ a {
 }
 
 strong {
-   color: #111827
+   color: #111827;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, .heading-large {
     line-height: 1.5;
     font-weight: 700;
 }
 
+h1, h2, .heading-large {
+    font-size: 2.5rem;
+}
+
 h1, h2 {
     text-align: center;
-    font-size: 2.5rem;
+}
+
+.heading-large {
+    text-align: left;
+    color: #111827;
 }
 
 h3 {
@@ -56,7 +63,7 @@ p {
     font-size: 1.6rem;
     line-height: 1.5;
     color: #374151;
-    text-align: justify;
+    /* text-align: justify; */
 }
 
 ul,
@@ -81,6 +88,18 @@ textarea {
 
 /* component classes */
 
+.subheading {
+    font-weight: 600;
+    text-align: left;
+    font-size: 2rem;
+    color: #2b3341;
+}
+
+.subheading-bold {
+    font-weight: 700;
+    color: #111827;
+}
+
 .large, .large p {
     font-size: 1.8rem;
     margin-bottom: 2rem;
@@ -99,10 +118,11 @@ textarea {
     border: none;
     border-radius: 50px;
     padding: 16px 24px;
+    font-size: 1.2rem;
     text-transform: uppercase;
     background-color: #111827;
     color: #fff;
-    font-weight: 500;
+    font-weight: 600;
     box-shadow: 0px 10px 10px -10px #000;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
@@ -132,6 +152,10 @@ textarea {
     margin-bottom: 2rem;
 }
 
+.mb-xl {
+    margin-bottom: 3rem;
+}
+
 .flex {
     display: flex;
     justify-content: center;
@@ -139,7 +163,7 @@ textarea {
 }
 
 @media(min-width: 600px) {
-    h1, h2 {
+    h1, h2, .heading-large {
         font-size: 3rem;
     }
 
@@ -152,17 +176,21 @@ textarea {
     }
 
     .container {
-        margin: 0 4rem;
+        padding: 0 4rem;
     }
 }
 
 @media(min-width: 768px) {
-    h1, h2 {
+    h1, h2, .heading-large {
         font-size: 3.4rem;
     }
 
     p {
         font-size: 1.8rem;
+    }
+
+    .subheading {
+        font-size: 2.4rem;
     }
 
     .large, .large p {
@@ -177,7 +205,7 @@ textarea {
 }
 
 @media(min-width: 1024px) {
-    h1, h2 {
+    h1, h2, .heading-large {
         font-size: 4rem;
     }
 
@@ -205,8 +233,12 @@ textarea {
 }
 
 @media(min-width: 1200px) {
-    h1, h2 {
+    h1, h2, .heading-large {
         font-size: 4.4rem;
+    }
+
+    .subheading {
+        font-size: 2.8rem;
     }
 
     .large, .large p {
@@ -214,7 +246,7 @@ textarea {
     }
 
     .container {
-        margin: 0 5vw;
+        padding: 0 7vw;
     }
 
     .container-slim {

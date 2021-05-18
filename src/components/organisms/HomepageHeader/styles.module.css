@@ -1,15 +1,11 @@
 .header {
     position: relative;
+    margin-bottom: 8rem;
+    background-color: #f7f6fb;
 }
 
 .content {
     padding-top: 16rem;
-}
-
-.subheading {
-    font-weight: 600;
-    font-size: 2rem;
-    color: #2b3341;
 }
 
 .imgWrapper {
@@ -21,9 +17,6 @@
 @media (min-width: 768px) {
     .content {
         width: 80%;
-    }
-    .subheading {
-        font-size: 2.4rem;
     }
     .imgWrapper {
         width: 70%;
@@ -37,7 +30,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin-bottom: 5rem;
+        margin-bottom: 10rem;
     }
     .content {
         padding: 5vh 0;
@@ -51,11 +44,5 @@
         height: 90vh;
         margin: 5vh 0;
 
-    }
-}
-
-@media (min-width: 1200px) {
-    .subheading {
-        font-size: 2.8rem;
     }
 }

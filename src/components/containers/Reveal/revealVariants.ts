@@ -10,7 +10,7 @@ export const revealVariants: RevealVariants = {
   fadeIn: {
     visible: {
       opacity: 1,
-      transition: { duration: 0.4, ease: `easeIn`, delay: 0.1 },
+      transition: { duration: 0.4, ease: `easeIn`, delay: 0.2 },
     },
     hidden: { opacity: 0 },
   },

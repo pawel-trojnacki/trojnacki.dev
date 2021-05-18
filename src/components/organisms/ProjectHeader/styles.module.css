@@ -1,0 +1,45 @@
+.header {
+    margin-top: 12rem;
+}
+
+.imageWrapper {
+    position: relative;
+    margin: 5rem 0;
+    height: 60vh;
+}
+
+@media (orientation: landscape) {
+    .imageWrapper {
+        height: 80vh;
+    }
+}
+
+@media (min-width: 768px) {
+    .header {
+        margin-top: 16rem;
+    }
+    .content {
+        width: 80%;
+    }
+    .imageWrapper {
+        height: 50vh;
+    }
+}
+
+@media (min-width: 768px) and (orientation: landscape) {
+    .imageWrapper {
+        height: 70vh;
+    }
+}
+
+@media (min-width: 1024px) and (orientation: landscape) {
+    .imageWrapper {
+        height: 100vh;
+    }
+} 
+
+@media (min-width: 1200px) {
+    .content {
+        width: 70%;
+    }
+}

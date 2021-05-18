@@ -3,6 +3,7 @@ import { GetStaticPaths, GetStaticProps } from 'next';
 import { getPortfolioStaticPaths } from '@/functions/wordpress/getPortfolioStaticPaths';
 import { getProjectStaticProps } from '@/functions/wordpress/getProjectStaticProps';
 import { SingleProject } from '@/types/project/singleProject.interface';
+import ProjectHeader from '@/components/organisms/ProjectHeader';
 
 interface Props {
   project: SingleProject;
@@ -15,12 +16,17 @@ export const getStaticProps: GetStaticProps = (context) =>
   getProjectStaticProps(context);
 
 const Project: React.FC<Props> = ({
-  project: { title, projectFields, blocks },
+  project: { title, projectFields, projectTypes, technologies, blocks },
 }) => (
   <>
-    <h1>{title}</h1>
-    <pre>{JSON.stringify(projectFields, null, 2)}</pre>
-    <pre>{JSON.stringify(blocks, null, 2)}</pre>
+    <ProjectHeader
+      title={title}
+      projectFields={projectFields}
+      projectTypes={projectTypes}
+      technologies={technologies}
+    />
+    {/* <pre>{JSON.stringify(projectFields, null, 2)}</pre>
+    <pre>{JSON.stringify(blocks, null, 2)}</pre> */}
   </>
 );
 

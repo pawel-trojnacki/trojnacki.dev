@@ -1,12 +1,13 @@
 .card>div {
     padding: 2rem 2rem 3rem;
-    border-radius: 1.4rem;
     background-color: #fff;
+    box-shadow: 0 0 12px -2px #f5f4f8;
+    border-radius: 16px;
 }
 
 .imageWrapper {
-    border-radius: 1.4rem;
     overflow: hidden;
+    border-radius: 16px;
 }
 
 .image {
@@ -44,4 +45,3 @@
         font-size: 1.7rem;
     }
 }
-

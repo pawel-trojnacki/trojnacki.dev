@@ -1,15 +1,20 @@
 import React from 'react';
+import { renderTags } from '@/functions/utils/renderTags';
+import { NodeList } from '@/types/project/nodeList.interface';
 
 interface Props {
-  items: string[];
+  list: NodeList;
 }
 
-const Tags: React.FC<Props> = ({ items }) => (
-  <>
-    {items.map((item) => (
-      <span key={item}>{item}</span>
-    ))}
-  </>
-);
+const Tags: React.FC<Props> = ({ list }) => {
+  const items = renderTags(list);
+  return (
+    <>
+      {items.map((item) => (
+        <span key={item}>{item}</span>
+      ))}
+    </>
+  );
+};
 
 export default Tags;

@@ -1,8 +1,4 @@
-import { Taxonomy } from '@/types/project/taxonomy.interface';
-
-interface NodeList {
-  nodes: Taxonomy[];
-}
+import { NodeList } from '@/types/project/nodeList.interface';
 
 export const renderTags = (nodeList: NodeList) => {
   const tags = nodeList.nodes.map(({ name }) => name);

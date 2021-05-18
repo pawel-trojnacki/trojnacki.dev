@@ -12,6 +12,7 @@ export const projectsMock: ProjectInfo[] = [
       nodes: [{ name: `Training Project` }],
     },
     projectFields: {
+      priority: 1,
       shortExcerpt: `Lorem ipsum dolor sit amet. Dolor escur sic amet lescu rotre mondi. Lorem ipsum dolor sit amet.`,
       thumbImage: {
         sourceUrl: `https://cdn.pixabay.com/photo/2016/05/24/16/48/mountains-1412683__340.png`,
@@ -30,6 +31,7 @@ export const projectsMock: ProjectInfo[] = [
       nodes: [{ name: `Training Project` }],
     },
     projectFields: {
+      priority: 2,
       shortExcerpt: `Lorem ipsum dolor sit amet. Dolor escur sic amet lescu rotre mondi. Lorem ipsum dolor sit amet.`,
       thumbImage: {
         sourceUrl: `https://cdn.pixabay.com/photo/2016/05/24/16/48/mountains-1412683__340.png`,
@@ -48,6 +50,7 @@ export const projectsMock: ProjectInfo[] = [
       nodes: [{ name: `Training Project` }],
     },
     projectFields: {
+      priority: 3,
       shortExcerpt: `Lorem ipsum dolor sit amet. Dolor escur sic amet lescu rotre mondi. Lorem ipsum dolor sit amet.`,
       thumbImage: {
         sourceUrl: `https://cdn.pixabay.com/photo/2016/05/24/16/48/mountains-1412683__340.png`,
@@ -66,6 +69,7 @@ export const projectsMock: ProjectInfo[] = [
       nodes: [{ name: `Training Project` }],
     },
     projectFields: {
+      priority: 4,
       shortExcerpt: `Lorem ipsum dolor sit amet. Dolor escur sic amet lescu rotre mondi. Lorem ipsum dolor sit amet.`,
       thumbImage: {
         sourceUrl: `https://cdn.pixabay.com/photo/2016/05/24/16/48/mountains-1412683__340.png`,
