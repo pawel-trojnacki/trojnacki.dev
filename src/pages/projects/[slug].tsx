@@ -7,6 +7,7 @@ import ProjectHeader from '@/components/organisms/ProjectHeader';
 import Section from '@/components/containers/Section';
 import Grid from '@/components/organisms/Grid';
 import Blocks from '@/components/containers/Blocks';
+import Seo from '@/components/common/Seo';
 
 interface Props {
   project: SingleProject;
@@ -22,6 +23,7 @@ const Project: React.FC<Props> = ({
   project: { title, projectFields, projectTypes, technologies, blocks },
 }) => (
   <>
+    <Seo title={title} description={projectFields.shortExcerpt} />
     <ProjectHeader
       title={title}
       projectFields={projectFields}

@@ -7,6 +7,7 @@ import Grid from '@/components/organisms/Grid';
 import Section from '@/components/containers/Section';
 import Text from '@/components/common/Text';
 import ContactForm from '@/components/organisms/ContactForm';
+import Seo from '@/components/common/Seo';
 
 interface Props {
   projects: ProjectInfo[];
@@ -17,6 +18,7 @@ export const getStaticProps: GetStaticProps = (context) =>
 
 const Home: React.FC<Props> = ({ projects }) => (
   <>
+    <Seo />
     <HomepageHeader />
     <Section id="portfolio" title="Selected Projects">
       <Grid projects={projects} />
