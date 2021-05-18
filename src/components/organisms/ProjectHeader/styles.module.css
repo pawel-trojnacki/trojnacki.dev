@@ -19,7 +19,7 @@
         margin-top: 16rem;
     }
     .content {
-        width: 80%;
+        margin-right: 20%;
     }
     .imageWrapper {
         height: 50vh;
@@ -33,13 +33,11 @@
 }
 
 @media (min-width: 1024px) and (orientation: landscape) {
+    .content {
+        margin: 0 10%;
+    }
     .imageWrapper {
         height: 100vh;
+        margin: 7rem 0;
     }
 } 
-
-@media (min-width: 1200px) {
-    .content {
-        width: 70%;
-    }
-}

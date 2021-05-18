@@ -1,56 +1,43 @@
-import Reveal from '@/components/containers/Reveal';
+import React from 'react';
+import HeadingBlock from '@/components/blocks/HeadingBlock';
+import ImageBlock from '@/components/blocks/ImageBlock';
+import ParagraphBlock from '@/components/blocks/ParagraphBlock';
 import { Block } from '@/types/project/blocks/block.type';
 import { BlockTypes } from '@/types/project/blocks/blocksTypes.enum';
+import GalleryBlock from '@/components/blocks/GalleryBlock';
+import VideoBlock from '@/components/blocks/VideoBlock';
 
-const renderBlock = (block: Block, id: number) => {
+const renderBlock = (block: Block, id: number): React.ReactElement | null => {
   let loop = 1;
   const key = `${loop}${id}${block.name}`;
   switch (block.name) {
     case BlockTypes.Paragraph:
-      return <Reveal key={key} variant="fadeUp" markup={block.saveContent} />;
+      return <ParagraphBlock key={key} content={block.saveContent} />;
     case BlockTypes.Heading:
-      return <Reveal key={key} variant="fadeUp" markup={block.saveContent} />;
+      return <HeadingBlock key={key} content={block.saveContent} />;
     case BlockTypes.Image:
       return (
-        <div key={key}>
-          {` `}
-          <img
-            src={block.attributes.url}
-            alt={block.attributes.alt}
-            style={{ width: `200px`, height: `200px` }}
-          />
-        </div>
+        <ImageBlock
+          key={key}
+          url={block.attributes.url}
+          alt={block.attributes.alt}
+        />
       );
     case BlockTypes.Gallery:
-      return (
-        <div key={key}>
-          {block.attributes.images.map(({ url, alt }, imgId) => (
-            <img
-              key={imgId}
-              src={url}
-              alt={alt}
-              style={{ width: `200px`, height: `200px` }}
-            />
-          ))}
-        </div>
-      );
+      return <GalleryBlock key={key} images={block.attributes.images} />;
     case BlockTypes.Video:
-      return (
-        <div key={key}>
-          <video src={block.attributes.src} muted autoPlay loop />
-        </div>
-      );
+      return <VideoBlock key={key} url={block.attributes.src} />;
     case BlockTypes.Group:
       return (
-        <div key={key}>
+        <section key={key} className="block-group">
           {block.innerBlocks.map((innerBlock, index) => {
             loop += 1;
             return renderBlock(innerBlock, index);
           })}
-        </div>
+        </section>
       );
     default:
-      return ``;
+      return null;
   }
 };
 

@@ -1,4 +1,4 @@
-export const blockPartial = `
+export const blocksPartial = `
     blocks {
         name
         ... on CoreHeadingBlock {

@@ -1,4 +1,5 @@
-import { blockPartial } from './blocksPartial';
+import { blocksPartial } from './blocksPartial';
+import { projectInfoPartial } from './projectInfoPartial';
 
 export const singleProjectPartial = `
   project(id: $id, idType: $idType) {
@@ -23,7 +24,12 @@ export const singleProjectPartial = `
           altText
           sourceUrl
         }
+        featured {
+          ... on Project {
+            ${projectInfoPartial}
+          }
+        }
       }
-      ${blockPartial}
+      ${blocksPartial}
     }
 `;

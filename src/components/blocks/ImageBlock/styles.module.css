@@ -1,0 +1,15 @@
+.image {
+    margin: 3rem 0;
+}
+
+@media (min-width: 768px) {
+    .image {
+        margin: 4rem 0;
+    }
+}
+
+@media (min-width: 1024px) {
+    .image {
+        margin: 6rem 0;
+    }
+}

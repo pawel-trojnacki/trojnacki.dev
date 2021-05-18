@@ -6,7 +6,7 @@ export interface BlockGallery extends BlockBase {
   attributes: {
     images: {
       url: string;
-      alt?: string;
+      alt: string | undefined;
     }[];
   };
 }

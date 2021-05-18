@@ -1,0 +1,28 @@
+.wrapper {
+    padding: 1.5rem;
+    background-color: #f7f6fb;
+}
+
+@media (min-width: 600px) {
+    .wrapper {
+        padding: 3rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .wrapper {
+        padding: 4rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .wrapper {
+        padding: 5rem;
+    }
+}
+
+@media (min-width: 1400px) {
+    .wrapper {
+        padding: 6rem;
+    }
+}

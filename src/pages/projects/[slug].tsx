@@ -4,6 +4,9 @@ import { getPortfolioStaticPaths } from '@/functions/wordpress/getPortfolioStati
 import { getProjectStaticProps } from '@/functions/wordpress/getProjectStaticProps';
 import { SingleProject } from '@/types/project/singleProject.interface';
 import ProjectHeader from '@/components/organisms/ProjectHeader';
+import Section from '@/components/containers/Section';
+import Grid from '@/components/organisms/Grid';
+import Blocks from '@/components/containers/Blocks';
 
 interface Props {
   project: SingleProject;
@@ -25,8 +28,12 @@ const Project: React.FC<Props> = ({
       projectTypes={projectTypes}
       technologies={technologies}
     />
-    {/* <pre>{JSON.stringify(projectFields, null, 2)}</pre>
-    <pre>{JSON.stringify(blocks, null, 2)}</pre> */}
+    <Blocks blocks={blocks} />
+    {!!projectFields.featured && (
+      <Section id="featured-projects" title="Featured Projects">
+        <Grid projects={projectFields.featured} />
+      </Section>
+    )}
   </>
 );
 

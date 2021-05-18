@@ -86,16 +86,20 @@ textarea {
     resize: none;
 }
 
+video {
+    width: 100%;
+}
+
 /* component classes */
 
-.subheading {
+.subheading, .subheading * {
     font-weight: 600;
     text-align: left;
     font-size: 2rem;
     color: #2b3341;
 }
 
-.subheading-bold {
+.subheading-bold, .subheading-bold * {
     font-weight: 700;
     color: #111827;
 }
@@ -111,6 +115,14 @@ textarea {
 
 .container-slim {
     margin: 0 2rem;
+}
+
+.container-block {
+    margin: 0;
+}
+
+.block-group {
+    padding: 2rem 0;
 }
 
 .btn {
@@ -140,7 +152,6 @@ textarea {
     box-shadow: none;
     transform: scale(0.97);
 }
-
 
 /* util classes */
 
@@ -189,7 +200,7 @@ textarea {
         font-size: 1.8rem;
     }
 
-    .subheading {
+    .subheading, .subheading * {
         font-size: 2.4rem;
     }
 
@@ -201,6 +212,10 @@ textarea {
 
     .container-slim {
         margin: 0 10rem;
+    }
+
+    .container-block {
+        margin: 0 10%;
     }
 }
 
@@ -227,6 +242,14 @@ textarea {
         margin: 0 20rem;
     }
 
+    .container-block {
+        margin: 0 15%;
+    }
+
+    .block-group {
+        padding: 3rem 0;
+    }
+
     .btn {
         font-size: 1.6rem;
     }
@@ -237,7 +260,7 @@ textarea {
         font-size: 4.4rem;
     }
 
-    .subheading {
+    .subheading, .subheading * {
         font-size: 2.8rem;
     }
 
@@ -251,5 +274,9 @@ textarea {
 
     .container-slim {
         margin: 0 25vw;
+    }
+
+    .container-block {
+        margin: 0 20%;
     }
 }

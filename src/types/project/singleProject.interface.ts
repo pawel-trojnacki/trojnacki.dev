@@ -1,5 +1,6 @@
 import { Block } from './blocks/block.type';
 import { ProjectBase } from './projectBase.interface';
+import { ProjectInfo } from './projectInfo.interface';
 
 export interface SingleProject extends ProjectBase {
   projectFields: {
@@ -10,6 +11,7 @@ export interface SingleProject extends ProjectBase {
       sourceUrl: string;
       altText?: string;
     };
+    featured: ProjectInfo[];
   };
   blocks: Block[];
 }
