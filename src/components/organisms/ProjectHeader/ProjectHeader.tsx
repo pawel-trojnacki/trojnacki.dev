@@ -7,6 +7,7 @@ import {
 } from '@/constants/animations';
 import { SingleProject } from '@/types/project/singleProject.interface';
 import Tags from '@/components/common/Tags';
+import HeaderImage from '@/components/common/HeaderImage';
 import classes from './styles.module.css';
 
 type Props = Pick<
@@ -50,10 +51,9 @@ const ProjectHeader: React.FC<Props> = ({
       initial="hidden"
       animate="visible"
     >
-      <img
-        src={projectFields.mainImage.sourceUrl}
-        alt={projectFields.mainImage.altText}
-        className={classes.img}
+      <HeaderImage
+        url={projectFields.mainImage.sourceUrl}
+        alt={projectFields.mainImage.altText || title}
       />
     </motion.div>
   </header>

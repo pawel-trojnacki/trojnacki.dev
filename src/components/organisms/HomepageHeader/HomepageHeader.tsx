@@ -7,6 +7,7 @@ import {
 } from '@/constants/animations';
 import ButtonScroll from '@/components/common/ButtonScroll';
 import Emoji from '@/components/common/Emoji';
+import HeaderImage from '@/components/common/HeaderImage';
 import classes from './styles.module.css';
 
 const HomepageHeader: React.FC = () => (
@@ -39,12 +40,12 @@ const HomepageHeader: React.FC = () => (
       animate="visible"
       className={classes.imgWrapper}
     >
-      <img
-        src="/images/hero-img.jpg"
+      <HeaderImage
+        url="/images/hero-img.jpg"
         alt="Website mockups"
         width={1000}
         height={1200}
-        className={classes.img}
+        variant="contain"
       />
     </motion.div>
   </header>

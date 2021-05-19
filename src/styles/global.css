@@ -24,7 +24,7 @@ body {
 }
 
 body, p, button, li, input, textarea {
-    font-family: 'Montserrat', 'sans-serif';
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     font-weight: 600;
 }
 
