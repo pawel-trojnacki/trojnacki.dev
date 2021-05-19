@@ -1,5 +1,4 @@
 import React from 'react';
-import Image from 'next/image';
 import { motion } from 'framer-motion';
 import {
   animateContainer,
@@ -40,16 +39,12 @@ const HomepageHeader: React.FC = () => (
       animate="visible"
       className={classes.imgWrapper}
     >
-      <Image
+      <img
         src="/images/hero-img.jpg"
         alt="Website mockups"
         width={1000}
         height={1200}
-        objectFit="contain"
-        objectPosition="center"
         className={classes.img}
-        loading="eager"
-        priority
       />
     </motion.div>
   </header>

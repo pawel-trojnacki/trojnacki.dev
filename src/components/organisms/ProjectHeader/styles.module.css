@@ -8,6 +8,13 @@
     height: 60vh;
 }
 
+.img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
 @media (orientation: landscape) {
     .imageWrapper {
         height: 80vh;

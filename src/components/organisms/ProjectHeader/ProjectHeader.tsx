@@ -1,5 +1,4 @@
 import React from 'react';
-import Image from 'next/image';
 import { motion } from 'framer-motion';
 import {
   animateContainer,
@@ -51,14 +50,9 @@ const ProjectHeader: React.FC<Props> = ({
       initial="hidden"
       animate="visible"
     >
-      <Image
+      <img
         src={projectFields.mainImage.sourceUrl}
         alt={projectFields.mainImage.altText}
-        layout="fill"
-        objectFit="cover"
-        objectPosition="center"
-        loading="eager"
-        priority
         className={classes.img}
       />
     </motion.div>
