@@ -5,7 +5,7 @@ import Input from '@/components/common/Input';
 import Feedback from '@/components/common/Feedback';
 import Emoji from '@/components/common/Emoji';
 import { sendContactRequest } from '@/functions/utils/sendContactRequest';
-import { consent, initialValues, validationSchema } from './formData';
+import { consent, initialValues, validationSchema } from '@/constants/formData';
 import classes from './styles.module.css';
 
 const ContactForm: React.FC = () => {

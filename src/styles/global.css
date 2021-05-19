@@ -62,8 +62,8 @@ h3 {
 p {
     font-size: 1.6rem;
     line-height: 1.5;
+    text-align: justify;
     color: #374151;
-    /* text-align: justify; */
 }
 
 ul,

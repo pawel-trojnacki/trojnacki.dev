@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { revealVariants } from './revealVariants';
+import { revealVariants } from '@/constants/animations';
 
 interface Props {
   variant: 'fadeIn' | 'fadeUp' | 'zoomIn';

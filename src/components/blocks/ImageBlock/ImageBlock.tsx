@@ -17,6 +17,7 @@ const ImageBlock: React.FC<Props> = ({ url, alt }) => (
         layout="responsive"
         width={2000}
         height={1500}
+        priority
       />
     </div>
   </Reveal>

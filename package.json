@@ -1,13 +1,12 @@
 {
   "name": "trojnacki.dev",
-  "description": "Personal portfolio",
+  "description": "Front-end developer personal portfolio",
   "version": "1.0.0",
   "private": true,
   "author": "Paweł Trojnacki",
   "license": "MIT",
   "keywords": [
     "nextjs",
-    "starter",
     "typescript"
   ],
   "scripts": {

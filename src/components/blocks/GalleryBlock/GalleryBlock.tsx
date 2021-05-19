@@ -19,8 +19,9 @@ const GalleryBlock: React.FC<Props> = ({ images }) => (
             src={url}
             alt={alt}
             layout="responsive"
-            width={1200}
-            height={800}
+            width={1000}
+            height={750}
+            priority
           />
         </div>
       </Reveal>

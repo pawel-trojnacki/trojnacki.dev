@@ -7,7 +7,7 @@ import ProjectHeader from '@/components/organisms/ProjectHeader';
 import Section from '@/components/containers/Section';
 import Grid from '@/components/organisms/Grid';
 import Blocks from '@/components/containers/Blocks';
-import Seo from '@/components/common/Seo';
+import Seo from '@/components/organisms/Seo';
 
 interface Props {
   project: SingleProject;

@@ -7,7 +7,7 @@ import Grid from '@/components/organisms/Grid';
 import Section from '@/components/containers/Section';
 import Text from '@/components/common/Text';
 import ContactForm from '@/components/organisms/ContactForm';
-import Seo from '@/components/common/Seo';
+import Seo from '@/components/organisms/Seo';
 
 interface Props {
   projects: ProjectInfo[];

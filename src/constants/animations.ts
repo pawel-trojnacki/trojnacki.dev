@@ -31,3 +31,31 @@ export const revealVariants: RevealVariants = {
     hidden: { opacity: 0, scale: 0.9 },
   },
 };
+
+export const animateContainer: Variants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      duration: 1,
+      ease: `easeInOut`,
+      staggerChildren: 0.15,
+    },
+  },
+};
+
+export const animateItem: Variants = {
+  hidden: { opacity: 0 },
+  visible: { opacity: 1 },
+};
+
+export const animateImage: Variants = {
+  hidden: animateItem.hidden,
+  visible: {
+    ...animateItem.visible,
+    transition: {
+      duration: 1,
+      delay: 0.5,
+    },
+  },
+};
