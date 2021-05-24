@@ -15,8 +15,10 @@ const ImageBlock: React.FC<Props> = ({ url, alt }) => (
         src={url}
         alt={alt}
         layout="responsive"
+        objectFit="cover"
+        objectPosition="center"
         width={2000}
-        height={1500}
+        height={1000}
         priority
       />
     </div>

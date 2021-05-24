@@ -32,7 +32,7 @@ const Project: React.FC<Props> = ({
     />
     <Blocks blocks={blocks} />
     {!!projectFields.featured && (
-      <Section id="featured-projects" title="Featured Projects">
+      <Section id="featured-projects" title="Other Projects">
         <Grid projects={projectFields.featured} />
       </Section>
     )}

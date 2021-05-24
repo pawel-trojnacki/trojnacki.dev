@@ -19,8 +19,10 @@ const GalleryBlock: React.FC<Props> = ({ images }) => (
             src={url}
             alt={alt}
             layout="responsive"
-            width={1000}
-            height={750}
+            objectFit="cover"
+            objectPosition="center"
+            width={900}
+            height={1000}
             priority
           />
         </div>

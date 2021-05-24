@@ -1,9 +1,9 @@
 .wrapper {
-    margin-bottom: 6rem;
+    margin-bottom: 10rem;
 }
 
 @media (min-width: 1024px) {
     .wrapper {
-        margin-bottom: 8rem;
+        margin-bottom: 12rem;
     }
 }
