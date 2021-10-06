@@ -27,7 +27,7 @@ const HomepageHeader: React.FC = () => (
         className="heading-large mb-lg"
         variants={animateItem}
       >
-        I create websites and web applications using JavaScript, React and
+        I create websites and web applications using JS, PHP, React and
         WordPress
       </motion.h1>
       <motion.div variants={animateItem}>

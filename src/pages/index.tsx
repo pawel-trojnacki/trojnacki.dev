@@ -25,13 +25,12 @@ const Home: React.FC<Props> = ({ projects }) => (
     </Section>
     <Section id="about" title="About" slim>
       <Text large center>
-        I’m focused especially on front-end development, so{` `}
+        I love front-end development, so{` `}
         <strong>HTML</strong>,{` `}
         <strong>CSS</strong>, and <strong>SASS</strong> are my bread and butter.
-        I speak fluent <strong>JavaScript</strong> and a bit ineloquent{` `}
-        <strong>TypeScript</strong>
-        {` `}
-        and <strong>PHP</strong>.
+        I speak fluent <strong>JavaScript</strong> and <strong>PHP</strong> and
+        a bit ineloquent{` `}
+        <strong>TypeScript</strong>.
       </Text>
       <Text large center>
         <strong>React</strong> is my favorite framework and I’m no stranger to
